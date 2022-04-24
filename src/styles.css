@@ -1,9 +1,10 @@
 html,
 
+/*This makes a fade-in animation*/
 body{
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 1s; /*Time to fade*/
+  animation-iteration-count: 1; /*Times it will fade; DONT TOUCH -_-*/
+  animation-fill-mode: forwards; /*Makes it fade in*/
 }
 
 @keyframes fadeInAnimation{
@@ -15,6 +16,15 @@ body{
   }
 }
 
+.navbar-lightgray{
+  background-color: white;
+}
+#starting-title{
+  margin-left: 10px;
+  margin-bottom: 10px; 
+}
+
+
 h1 {
   margin: 0;
   padding: 0;
@@ -23,8 +33,16 @@ h1 {
   text-align: center;
 }
 
-section {
-  height: 100vh;
+h2 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+}
+
+#ex {
+  height: 50vh; /*How big or small it makes the section, note that each section will uniformly fill in the entire page.*/
 }
 
 .tag {
