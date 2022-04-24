@@ -1,4 +1,54 @@
+html,
+
 body{
-  background-color: #B1D2CC;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 2rem;
   text-align: center;
 }
+
+section {
+  height: 100vh;
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 2vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.yellow {
+  background-color: lightyellow;
+}
+.red {
+  background-color: lightcoral;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+
+
